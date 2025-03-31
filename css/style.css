@@ -1,0 +1,27 @@
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border: 1px solid black;
+    width: 80vw;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.site-footer {
+    text-align: center;
+}
