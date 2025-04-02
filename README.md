@@ -12,5 +12,8 @@ cropped-Gracie-Production.png converted to:
 <meta> description changed to:
     "Gracie Humaita Kansas City offers competitive Brazilian Jiu Jitsu, self defense, and training for adults and kids."
 
+hero banner:
+    converted image to WebP format. 21,389kb -> 276kb
+
 <footer> changed to:
     "2025 Gracie Humaita Kansas City. All rights reserved."
