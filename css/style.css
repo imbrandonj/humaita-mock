@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    letter-spacing: 0.075rem;
 }
 
 .hero-banner {
@@ -84,9 +85,14 @@ body {
     gap: 2vh;
 }
 
+.hero-content h1 {
+    font-variant: small-caps;
+    letter-spacing: 0.15rem;
+    line-height: 2rem;
+}
+
 .hero-content h2 {
     font-size: 1.2rem;
-    letter-spacing: 0.04rem;
 }
 
 .hero-content h1, .hero-content h2 {
@@ -112,12 +118,86 @@ body {
     border-radius: 999px;
     font-weight: bold;
     text-decoration: none;
+    width: 15rem;
+    text-align: center;
     letter-spacing: 0.05rem;
     transition: background-color 0.3s ease;
 }
 
 .quick-contact a:hover {
     background-color: #e6ba00;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(32, 35, 37);
+}
+
+.page-content h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+.page-content p {
+    color: silver;
+    line-height: 1.25rem;
+}
+
+.page-content a {
+    background-color: rgb(105, 127, 149);
+    color: white;
+    text-decoration: none;
+    border-radius: 2.5%;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer > div {
+    margin: 1rem 0;
+}
+
+footer h4 {
+    font-variant: small-caps;
+    font-weight: 200;
+    letter-spacing: 0.15rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer p, footer h4 {
+    margin: 1rem 0;
+}
+
+footer a, footer p {
+    line-height: 2rem;
+    text-decoration: none;
+    color: silver;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style: none;
 }
 
 @media (min-width: 768px) {
