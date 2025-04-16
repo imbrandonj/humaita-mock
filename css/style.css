@@ -144,9 +144,21 @@ body {
     color: white;
 }
 
-.page-content p {
+.page-content p, .page-content ul, .page-content em {
     color: silver;
     line-height: 1.25rem;
+}
+
+.page-content ul {
+    margin: 1rem;
+}
+
+.page-content li {
+    margin: 1rem 0;
+}
+
+.page-content img {
+    margin: 1rem 0;
 }
 
 .page-content a {
