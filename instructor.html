@@ -104,6 +104,14 @@
         main.style.paddingTop = `${headerHeight}px`;
       }
 
+      // nav-links close button:
+      const closeBtn = document.querySelector('.close-nav button');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        });
+      }
+
       // burger effect:
       const burger = document.querySelector('.burger');
       const navLinks = document.querySelector('.nav-links');
