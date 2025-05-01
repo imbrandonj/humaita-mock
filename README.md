@@ -3,6 +3,7 @@
 ## Project Summary  
 Front-end optimization and SEO refinement of the static website for Gracie Humaita Kansas City. The following changes were made to improve performance, structure, and discoverability.
 
+
 ---
 
 ## Performance Baseline (Original Site)
@@ -46,6 +47,37 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
 
 ---
 
+## Deployment & Hosting
+
+Hosted via [Vercel](https://vercel.com) for fast global delivery and zero-config deployment.  
+_Why: Vercel offers a faster, more scalable alternative to legacy hosting solutions like HostGator. Its CDN-backed infrastructure, automatic HTTPS, and Git-based CI/CD enable superior performance, security, and development workflow._
+
+---
+
+## Lighthouse Results (Deployed Site)
+
+Lighthouse scores after deploying the optimized site to Vercel:
+
+| Category         | Score |
+|------------------|-------|
+| **Performance**      | 100   |
+| **Accessibility**    | 86    |
+| **Best Practices**   | 78    |
+| **SEO**              | 100   |
+
+> **Key Performance Metrics:**
+> - First Contentful Paint (FCP): 0.7s  
+> - Largest Contentful Paint (LCP): 0.7s  
+> - Total Blocking Time (TBT): 0ms  
+> - Cumulative Layout Shift (CLS): 0.032  
+> - Speed Index (SI): 0.7s
+
+Captured: **May 1, 2025, 9:56 AM CDT**  
+
+_Why: These scores demonstrate a complete recovery from critical failures in the original site, now reflecting a fast, accessible, and SEO-optimized production build._
+
+---
+
 ## Optimization & Asset Management
 
 - **Logo Format**  
@@ -83,7 +115,7 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
 
 - **Keyword Strategy Suggestions**  
   Include context-specific keywords like: `Academy`, `School`, `Gym`.  
-  Add alt text to index.html image of kids BJJ class.  
+  Add descriptive alt text to the Kids BJJ image on the homepage.  
   _Why: Relevant keywords and alt tags increase visibility in search and improve accessibility._
 
 ---
@@ -126,6 +158,27 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
   - Enabled home page section buttons to scroll users to the correct section ID on `adults-bjj.html`.  
   - Adjusted anchor scrolling offsets to account for fixed header height.  
   _Why: These changes ensure consistent navigation, cleaner design, and reduce friction when moving through the site._
+
+---
+
+## Next Steps
+
+- Refine the **Adults BJJ** page:
+  - Evaluate the purpose of the “Advanced Program” section. Consider splitting the existing “Curriculum” and “Sport BJJ” sections for clarity.
+  - Add a dedicated “Facility” section showcasing training space and amenities.
+  - Expand on “A Huge Adults Program” with specific details — number of students, presence of law enforcement, program history, and community legacy.
+  - Improve the “Reasons for Women” section by revising language, removing redundancy (e.g., repeated terms like "self-confidence").
+  - Consider rewriting the “Kids BJJ” section entirely, emphasizing storytelling and keeping impactful quotes.
+
+- Create a dedicated **Competition Team** page:
+  - Highlight the modern competitive success and camaraderie of the team.
+  - Feature recent media/photos and mention training times such as **Sunday Competition Practice**.
+
+- Awaiting final image selections from the client to apply explicit width and height for improved CLS and Accessibility.
+- Finalize caching policy for static assets via `vercel.json` for repeat-visit performance gains.
+- Add CSP, COOP, and XFO headers to further improve Best Practices compliance and browser security.
+
+_These refinements will be implemented after client approval to maximize compliance with modern web standards._
 
 ---
 
