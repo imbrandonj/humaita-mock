@@ -32,23 +32,28 @@ html, body {
     color: white;
 }
 
-.page-header,
-.hero header {
+.page-header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
+.hero-header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .page-header {
     background-color: rgb(10, 50, 70);
 }
 
-.nav {
+.page-header .nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .page-header .logo img {
@@ -79,7 +84,6 @@ html, body {
 
 .nav-links li {
     margin: 0.5rem 0;
-    padding: 1rem 0;
 }
 
 .nav-links a {
@@ -121,7 +125,7 @@ html, body {
 .hero-content h1 {
     font-variant: small-caps;
     line-height: 2.5rem;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     letter-spacing: 0.3rem;
 }
 
@@ -299,7 +303,7 @@ footer a:hover {
         display: none;
     }
 
-    .nav .logo {
+    .hero-header .logo {
         margin: 0 5rem 0 0;
     }
 
@@ -314,6 +318,7 @@ footer a:hover {
 
     .nav-links li {
         margin: 0 1rem;
+        padding: 1rem 0;
         background-color: #fcd2006e;
     }
 
@@ -325,17 +330,23 @@ footer a:hover {
         padding: 1rem 2rem;
     }
 
+    .hero-content {
+        margin-top: 12vh;
+    }
+
     .hero-content h1, .hero-content h2 {
         width: 40vw;
     }
 
     .hero-content h1 {
-        line-height: 3.3rem;
-        font-size: 3.3rem;
-        letter-spacing: 0.33rem;
+        padding-top: 4rem;
+        line-height: 3.9rem;
+        font-size: 3.9rem;
+        letter-spacing: 0.39rem;
     }
     
     .hero-content h2 {
+        padding-bottom: 4rem;
         font-size: 2rem;
         letter-spacing: 0.2rem;
         font-weight: 200;
@@ -369,12 +380,16 @@ footer a:hover {
 
 
 @media (max-width: 767px) {
+    .hero-header .nav {
+        flex-direction: column;
+    }
+
     .nav-links {
         display: none;
         position: fixed;
-        top: 22vh;
-        left: 10vw;
-        width: 80vw;
+        top: 15vh;
+        left: 5vw;
+        width: 90vw;
         height: 70vh;
         background-color: #fcd400;
         flex-direction: column;
