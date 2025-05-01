@@ -11,50 +11,109 @@
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="page-header">
     <nav class="nav">
       <a href="index.html" class="logo">
         <img src="assets/logos/logo.webp" alt="Gracie Humaita Logo">
       </a>
-      <button class="burger" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <hr>
+    <button class="burger" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li class="close-nav"><button aria-label="Close Menu">&times;</button></li>
+      <li><a href="index.html">Home</a></li>
+      <hr>
+      <li><a href="adults-bjj.html">Adults BJJ</a></li>
+      <hr>
+      <li><a href="kids-bjj.html">Kids BJJ</a></li>
+      <hr>
+      <li><a href="competition-team.html">Competition Team</a></li>
+      <hr>
+      <li><a href="podcast.html">Podcast</a></li>
+      <hr>
+      <li><a href="https://graciehumaitakansascity.sites.zenplanner.com/sign-up-now.cfm" target="_blank">Sign Up</a></li>
+      <hr>
+      <li><a href="https://graciehumaitakansascity.sites.zenplanner.com/login.cfm" target="_blank">Login</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <h2 class="page-h2">Meet the Kansas City<br> Gracie Humaita Instructors</h2>
+  
+  <section class="page-content">
+    <picture>
+      <img src="img/kcbjj-600.webp" alt="Michael Graeber rolling with another jiujitsu practitioner.">
+    </picture>
+    <br>
+    <h3>Professor Michael Graeber</h3>
+    <p>Professor Graeber is a 2nd Degree Black Belt in Brazilian Jiu-Jitsu under the Legendary Wellington “Megaton” Dias.
+    <br><br>
+      He has competed in countless tournaments across the globe, is a 5-time Arizona State Champion, Gracie United Champion, and a Pan American Medalist.
+      <br><br>
+      He has traveled to Rio de Janeiro and trained with the Gracie Humaita World Competition Team.  
+      <br><br>
+      Michael's professional career as an Controls Systems Engineer gave him the opportunity travel extensively and train with many of the best Academies in the USA.  
+      <br><br>
+      Michael has lived in South Kansas City since 2005 with his wife Stephanie and their three daughters.
+    </p>
+  </section>
+
+  <section class="page-content">
+    <h3>Carlos Vargas</h3>
+  </section>
+
+  <section class="page-content">
+    <h3>Sean Liebig</h3>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h4>contact</h4>
+      <a href="https://maps.apple.com/maps?q=1323%20Atlantic%20Ave,%20North%20Kansas%20City,%20MO" target="_blank">1323 Atlantic Ave <br>
+        North Kansas City, MO</a><br>
+      <a href="tel:18164716191">(816) 471-6191 &raquo;</a>
+    </div>
+    <div>
+      <h4>navigation</h4>
+      <ul class="footer-links">
+        <li><a href="instructor.html">Instructor</a></li>
         <li><a href="adults-bjj.html">Adults BJJ</a></li>
-        <hr>
         <li><a href="kids-bjj.html">Kids BJJ</a></li>
-        <hr>
         <li><a href="competition-team.html">Competition Team</a></li>
-        <hr>
         <li><a href="podcast.html">Podcast</a></li>
-        <hr>
         <li><a href="https://graciehumaitakansascity.sites.zenplanner.com/sign-up-now.cfm" target="_blank">Sign Up</a></li>
-        <hr>
         <li><a href="https://graciehumaitakansascity.sites.zenplanner.com/login.cfm" target="_blank">Login</a></li>
       </ul>
-    </nav>
-  </header>
-  
-    <main>
-    </main>
-  
-    <footer class="site-footer">
-      <p>&copy; 2025 Gracie Humaita Kansas City. All rights reserved.</p>
-    </footer>
+    </div>
+    <p>&copy; 2025 Gracie Humaita Kansas City. All rights reserved.</p>
+  </footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-  
-        burger.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-        });
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // dynamic header height:
+      const header = document.querySelector('.page-header');
+      const main = document.querySelector('main');
+      if (header && main) {
+        const headerHeight = header.getBoundingClientRect().height;
+        main.style.paddingTop = `${headerHeight}px`;
+      }
+
+      // burger effect:
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
       });
-    </script>
+
+    });
+  </script>
   
-  </body>
+</body>
 </html>

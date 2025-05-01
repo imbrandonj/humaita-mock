@@ -65,16 +65,20 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
   Example: Helio PNG reduced from **250KB → 30KB**.  
   _Why: Reduces bandwidth usage and improves page speed across devices._
 
+- **Responsive Image Loading**  
+  Implemented `<picture>` elements and media queries to load appropriately sized images for mobile and desktop.  
+  _Why: Delivers smaller images to mobile devices, improving load time and performance without sacrificing desktop quality._
+
 ---
 
 ## SEO & Semantic Improvements
 
 - **Title Tag**  
-  Added `<title>` tag with value `"Gracie Humaita Kansas City"`.  
+  Added `<title>` tag with value "Gracie Humaita Kansas City".  
   _Why: Clear, concise titles improve search ranking and avoid keyword penalties. Without it, browsers may fall back to using the `<h1>` as the tab label._
 
 - **Meta Description**  
-  Added: `"Gracie Humaita Kansas City offers competitive Brazilian Jiu Jitsu, self defense, and training for adults and kids."`  
+  Added: "Gracie Humaita Kansas City offers competitive Brazilian Jiu Jitsu, self defense, and training for adults and kids."  
   _Why: Helps Google understand what the site is about and display a clean search snippet._
 
 - **Keyword Strategy Suggestions**  
@@ -86,6 +90,13 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
 
 ## Content & Layout Refinements
 
+- **Header Improvements**  
+  - Dynamically calculated header height and added it as padding to prevent overlap with page content.  
+  - Refactored navigation menu behavior to display as a floating pop-up instead of extending the header background.  
+  - Reorganized `<h1>` and logo from stacked layout into a horizontal row for reduced height and visual clarity.  
+  - Navigation header now remains fixed during scroll.  
+  _Why: These changes improve usability, navigation clarity, and prevent content from being hidden beneath fixed elements._
+
 - **Text Cleanup**  
   Corrected grammar issues, eliminated extra spaces, refined phrasing.  
   _Example: “Women’s Brazilian Jiu Jitsu” section on index.html_  
@@ -95,6 +106,10 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
   Centered misaligned images and relocated them for logical flow and visual balance.  
   _Why: Visual consistency improves readability and aesthetic appeal._
 
+- **Mobile Layout Cleanup**  
+  Identified and resolved layout bugs causing horizontal scroll or visual inconsistencies on smaller screens.  
+  _Why: Ensures a clean, responsive experience on phones and tablets._
+
 - **Footer Overhaul**  
   - Changed copyright:
     ```
@@ -103,6 +118,14 @@ Environment: **Desktop** with **Chromium 135.0.0.0**
   - Centered `Contact` and `Navigation` sections.  
   - Resized font and upgraded headers (`Contact`, `Navigation`) to `<h4>` elements.  
   _Why: Clear structure improves legibility and helps users navigate the site more easily._
+
+- **Link & Navigation Fixes**  
+  - Updated “Trial Program” link on the Adults BJJ page to redirect to the Free Trial page instead of Zen Planner login.  
+  - Standardized link styling across all pages to match the main page appearance.  
+  - Adjusted link button widths for better balance and spacing.  
+  - Enabled home page section buttons to scroll users to the correct section ID on `adults-bjj.html`.  
+  - Adjusted anchor scrolling offsets to account for fixed header height.  
+  _Why: These changes ensure consistent navigation, cleaner design, and reduce friction when moving through the site._
 
 ---
 
