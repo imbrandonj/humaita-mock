@@ -423,3 +423,41 @@ footer a:hover {
     }
 }
 
+/* tiny screen edge cases */
+@media (max-height: 600px), (max-width: 360px) {
+  .hero-banner,
+  .cover {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .hero-content {
+    margin-top: 1vh;
+    width: 88vw;
+    gap: 0vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .quick-contact {
+    margin-top: 2.5vh;
+  }
+
+  .quick-contact a {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    width: 12rem;
+  }
+}
